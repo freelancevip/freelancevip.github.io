@@ -8,5 +8,8 @@ export default defineConfig({
   site: 'https://freelancevip.github.io',
   integrations: [mdx(), sitemap(), tailwind()],
   outDir: './docs',
-  base: '/'
+  base: '/',
+  build: {
+    assets: 'astro'
+  },
 });
