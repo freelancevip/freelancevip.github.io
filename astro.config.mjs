@@ -7,5 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://freelancevip.github.io',
   integrations: [mdx(), sitemap(), tailwind()],
-  outDir: './docs'
+  outDir: './docs',
+  base: '/'
 });
