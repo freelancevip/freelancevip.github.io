@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projekte" sideBarActiveItemID="projects">
+  <section class="pb-12 mt-5">
+    <div>
+      <div class="text-3xl w-full font-bold mb-5">
+        Fallstudie: Telegram-Bot-System für landwirtschaftliche Unterstützung
+      </div>
+    </div>
+
+    <HorizontalCard
+      title="Nationales System zur Unterstützung von Landwirten (Ukraine)"
+      img="/img/agrobot-admin.png"
+      desc="Telegram-Bot und Admin-Dashboard zur schnellen Bearbeitung landwirtschaftlicher Hilfsanfragen während der Krise. Entwickelt mit Node.js, Laravel und MySQL."
+      url="#"
+      badge="Full-Stack"
+    />
+
+    <div class="mt-6 space-y-4 text-base leading-relaxed">
+      <p>
+        Als <strong>Lead Full-Stack Developer</strong> entwickelte ich ein robustes
+        System zur Annahme, Bearbeitung und Nachverfolgung von Anträgen über Telegram
+        – vollständig ohne Web-Login für Endnutzer.
+      </p>
+      <ul class="list-disc ml-5">
+        <li>
+          Telegram-Bot mit Registrierung, Bearbeitung & Dateiupload (Node.js,
+          Telegraf.js)
+        </li>
+        <li>
+          Admin-Panel für 4 Operatoren mit Rollen & Dokumentendruck
+          (Laravel/PHP)
+        </li>
+        <li>REST API über NGINX, Deployment via PM2, Datenhaltung in MySQL</li>
+      </ul>
+      <p>
+        <strong>Resultat:</strong> 15.000+ Anträge in 2 Monaten, bis zu 1.000/Tag,
+        dreifache Effizienzsteigerung im Vergleich zur vorherigen Excel-basierten
+        Lösung.
+      </p>
+      <p class="italic text-sm">Code nicht öffentlich verfügbar (NDA).</p>
+    </div>
+  </section>
+</BaseLayout>
